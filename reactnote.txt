@@ -1,0 +1,37 @@
+================Reactjs Props==============
+
+=>Props are immutable in reactjs
+=>In Functional Component we assign props variable but 
+In class component we access without assign it by using {this.props.name}
+
+========Props and State======
+ Props:
+        1)props get passed to the component
+        2) Function Parameter
+	3) props are immutable
+	4) i)props- Function Component ii)this.props- class Component
+
+  State:
+	1) State is managed within the component
+	2) Variable declared in the function body
+	3) state can be changed
+	4) i)useState Hook- Functional Component
+   	   ii) this.state - class component  
+
+
+================State and setState==========
+i) setState method is accept 2 parameter 1)object 2)callback function
+ii) setState method we can pass function also this function changed based on previous function
+  
+  Example:   increment =()=>{
+			this.setState((prevState,props)=>({
+			  count:prevState.count+1
+		            }))
+                            }
+              incrementFive(){
+			this.increment()
+			this.increment()
+			this.increment()
+			this.increment()
+				}
+             
